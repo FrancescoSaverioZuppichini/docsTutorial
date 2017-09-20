@@ -12,7 +12,7 @@ class JokeMachine {
      * @return {String} A random joke
      */
     getRandomJoke() {
-        return this.jokes[Math.floor(Math.random() * items.length)]
+        return this.jokes[Math.floor(Math.random() * this.jokes.length)]
     }
     /**
      * Print on the console a random joke. I hope it is funny!
@@ -21,7 +21,7 @@ class JokeMachine {
         console.log(this.getRandomJoke)
     }
     /**
-     * This function add a joke into the inner array
+     * This function adds a joke into the inner array
      *
      * @param {String} joke A funny joke
      */
