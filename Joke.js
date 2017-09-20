@@ -7,24 +7,24 @@ class JokeMachine {
         this.jokes = []
     }
     /**
-         * Return a random joke from the inner list
-         *
-         * @return {String} A random joke
-         */
+     * Return a random joke from the inner list
+     *
+     * @return {String} A random joke
+     */
     getRandomJoke() {
         return this.jokes[Math.floor(Math.random() * items.length)]
     }
     /**
-         * Print on the console a random joke. I hope it is funny!
-         */
+     * Print on the console a random joke. I hope it is funny!
+     */
     sayRandomJoke() {
         console.log(this.getRandomJoke)
     }
     /**
-         * This function add a joke into the inner array
-         *
-         * @param {String} joke A funny joke
-         */
+     * This function add a joke into the inner array
+     *
+     * @param {String} joke A funny joke
+     */
     addJoke(joke) {
         this.jokes.push(joke)
     }
